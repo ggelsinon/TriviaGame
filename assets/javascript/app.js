@@ -3,32 +3,46 @@ $(document).ready(function() {
 var correctAnswers = 0;
 var incorrectAnswers = 0;
 var unanswered =0;
-var time = 12000;
+var time = 0;
 // can we make questions objects with the answers as an array in that object??
-
-// $("#questions").hide
-
-//onclick event to start the game 
-$("#start").on("click", function () {
-  // jquery to hide intro container
-  $(".header").hide
-    // jquery .show to see questions
-  $("#quiz").show
-
-// timer (object?)
-
-    setTimeout(twoMinutes, 1000 * 120);
-
-
+var questionsObj =[{
+  question: "How many No. 1 songs did Johnny Cash have?",
+  answerList: ["0","5","13"],
+  answer: 2
+},{
+  question: "Johnny Cash married June Carter in what year?",
+  answerList: ["1968","1973","1977"],
+  answer: 0
+},{
+  question: "Johnny Cash had his own television show on ABC in which years?",
+  answerList: ["1965-1970","1969-1971","1973-1977"],
+  answer: 1
+},{
 
 }
-//  Step 3:
-//  Fill in the blanks to these functions.
-function fiveSeconds() {
-  // in the element with an id of time-left add an h2 saying About 10 Seconds Left!
-  // console log 10 seconds left
-  $("#time-left").append("<h2>About 10 Seconds Left!</h2>");
-  console.log("10 seconds left");
+
+//Functions:
+//timer as a function - i dunno might work
+function timer(){
+ 
+}
+//dynamically create question contents???
+function createQuestions(){
+
+  for (var i = 0; i < questionsObj.length; i++)
+    var questionText = $("<p>");
+    questionText.addClass("question");
+    questionText.text(questionsObj[i]);
+  
+}
+// function startQuiz(){
+//onclick event to start the game 
+function startQuiz(){
+$("#start").on("click", function () {
+    setTimeout(twoMinutes, 1000 * 120);
+    $("#timeLeft").append("time remaining :" + time); //how do i set the time variable so it knows what to display
+
+}
 
   // show the questions
 //   1. How many No. 1 songs did Johnny Cash have?

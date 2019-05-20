@@ -16,3 +16,10 @@ h1 {
     width: 75%;
     margin: 30Px;
 }
+
+#timeLeft {
+    border: 10px;
+    border-color: antiquewhite;
+    font:bold;
+    
+}
