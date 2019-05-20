@@ -19,28 +19,41 @@ var questionsObj =[{
   answer: 1
 },{
 
-}
+}]
 
+function hideQuiz(){
+  $("#questions").hide;
+}
 //Functions:
 //timer as a function - i dunno might work
 function timer(){
  
 }
-//dynamically create question contents???
+//dynamically create question contents using the question objects. I might be over-complicating this???
 function createQuestions(){
 
   for (var i = 0; i < questionsObj.length; i++)
     var questionText = $("<p>");
     questionText.addClass("question");
-    questionText.text(questionsObj[i]);
+    questionText.text(questionsObj[i],question, answerList);
   
 }
 // function startQuiz(){
 //onclick event to start the game 
 function startQuiz(){
 $("#start").on("click", function () {
+    $("#questions").show;
     setTimeout(twoMinutes, 1000 * 120);
     $("#timeLeft").append("time remaining :" + time); //how do i set the time variable so it knows what to display
+
+},
+
+function submit(){
+
+},
+
+function reset(){
+  $("#submit").on("click", function () {
 
 }
 
