@@ -6,14 +6,14 @@ var unanswered =0;
 var time = 12000;
 // can we make questions objects with the answers as an array in that object??
 
-$("#questions").hide
+// $("#questions").hide
 
 //onclick event to start the game 
 $("#start").on("click", function () {
   // jquery to hide intro container
-  $("#intro").hide
+  $(".header").hide
     // jquery .show to see questions
-  $("#questions").show
+  $("#quiz").show
 
 // timer (object?)
 

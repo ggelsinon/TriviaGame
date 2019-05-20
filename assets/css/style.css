@@ -8,5 +8,11 @@ h1 {
 }
 
 .question {
-    
+
+}
+
+.questions {
+    background: lightgray;
+    width: 75%;
+    margin: 30Px;
 }
