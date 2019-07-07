@@ -51,7 +51,7 @@ $(document).ready(function () {
 var gameObj = {
     correct: 0,
     incorrect: 0,
-    counter: 16,
+    counter: 120,
 
     timeLeft: function(){
         gameObj.counter--;
