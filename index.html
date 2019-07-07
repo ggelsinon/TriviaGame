@@ -6,6 +6,7 @@
     <title>Johnny Cash Trivia</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
@@ -15,45 +16,82 @@
     <header>
         <h1>Johnny Cash Trivia</h1>
         <img src="assets/images/JCash2010-1408383599.jpg">
-        <button type="button" class="btn btn-light start">Start Game!</button>
+        <button type="button" class="btn btn-secondary" id="start">Start Game!</button>
     </header>
-    <div class="container-quiz">
-        <div id=timeLeft></div>
+    <div id="container-quiz">
+        <div id="timeLeft"></div>
         <div id="questions">
-
-            <div class="quest">
-                <p>What is the first No. 1 song recorded by Johnny Cash?</p>
-                <input type="radio" class="correct">I Walk the Line<br>
-                <input type="radio">Ring of Fire<br>
-                <input type="radio">Folsom Prison Blues<br>
-            </div>
-            <div class="quest">
-                <p>The song “A Boy Named Sue” reached No. 1 in 1969. What Grammy did Johnny Cash receive for it?</p>
-                <input type="radio">Best Gospel Performance/Song<br>
-                <input type="radio">Song of the Year<br>
-                <input type="radio" class="correct">Best country vocal performance, male<br>
-            </div>
-            <div class="quest">
-                <p>How old was Johnny Cash when he died?</p>
-                <input type="radio" class="correct">71<br>
-                <input type="radio">80<br>
-                <input type="radio">78<br>
-            </div>
-
-
-
-
-            <button type="button" class="btn btn-light submit">Submit Answers</button>
-        </div>
-        <!-- Answer Page -->
-        <div id="score">
-
         </div>
     </div>
-    <script type="text/javascript" src="assets/javascript/app.js"></script>
+    <div id="submit-div">
+        <button type="button" class="btn btn-light" id="submit">Submit Answers</button>
+    </div>
+    <script type="text/javascript" src="assets/javascript/app4.js"></script>
     </div>
 
 
 </body>
 
 </html>
+
+
+<!-- <div class="quest">
+                <p>What is the first No. 1 song recorded by Johnny Cash?</p>
+                <input type="radio" name="quest1" value="a">I Walk the Line<br>
+                <input type="radio" name="quest1" value="b">Ring of Fire<br>
+                <input type="radio" name="quest1" value="c">Folsom Prison Blues<br>
+            </div>
+            <div class="quest">
+                <p>The song “A Boy Named Sue” reached No. 1 in 1969. What Grammy did Johnny Cash receive for it?</p>
+                <input type="radio" name="quest2" value="a">Best Gospel Performance/Song<br>
+                <input type="radio" name="quest2" value="b">Song of the Year<br>
+                <input type="radio" name="quest2" value="c">Best country vocal performance, male<br>
+            </div>
+            <div class="quest">
+                <p>How old was Johnny Cash when he died?</p>
+                <input type="radio" name="quest3" value="a">71<br>
+                <input type="radio" name="quest3" value="b">80<br>
+                <input type="radio" name="quest3" value="c">78<br>
+            </div>
+            <div class="quest">
+                <p>How many No. 1 songs did Johnny Cash have?</p>
+                <input type="radio" name="quest4" value="a">none<br>
+                <input type="radio" name="quest4" value="b">8<br>
+                <input type="radio" name="quest4"  value="c">13<br>
+            </div>
+            <div class="quest">
+                <p>Johnny Cash married June Carter in what year?</p>
+                <input type="radio" name="quest5">1963<br>
+                <input type="radio" name="quest5">1975<br>
+                <input type="radio" name="quest5"  value="c">1968<br>
+            </div>
+            <div class="quest">
+                <p>Johnny Cash had his own television show on ABC in which years?</p>
+                <input type="radio" name="quest6"  value="a">1969-1971<br>
+                <input type="radio" name="quest6">1965-1977<br>
+                <input type="radio" name="quest6">1975-1977<br>
+            </div>
+            <div class="quest">
+                <p>What song recorded by Johnny Cash received the CMA award for single of the year in 2003?</p>
+                <input type="radio" name="quest7"><br>
+                <input type="radio" name="quest7" value="b">Hurt<br>
+                <input type="radio" name="quest7"><br>
+            </div>
+            <div class="quest">
+                <p>What is the title of Johnny Cash’s last No. 1 single on Billboard’s country chart?</p>
+                <input type="radio" name="quest8" value="a"><br>
+                <input type="radio" name="quest8" value="b">One Piece at a Time 1976<br>
+                <input type="radio" name="quest8" value="c"><br>
+            </div>
+            <div class="quest">
+                <p>Johnny Cash and his wife June Carter Cash won a Grammy for best country vocal performance by a duo or group in 1970 for what song?</p>
+                <input type="radio" name="quest9" value="a"><br>
+                <input type="radio" name="quest9" value="b"><br>
+                <input type="radio" name="quest9" value="c">“If I Were a Carpenter”<br>
+            </div>
+            <div class="quest">
+                <p>Johnny Cash appeared in how many episodes of the television show Hee Haw?</p>
+                <input type="radio" name="quest10" value="a">One<br>
+                <input type="radio" name="quest10" value="b">Ten<br>
+                <input type="radio" name="quest10" value="c">Four<br>
+            </div> -->

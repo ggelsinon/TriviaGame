@@ -17,9 +17,16 @@ h1 {
     margin: 30Px;
 }
 
+#container-quiz {
+    background:rgb(207, 204, 204) ;
+    opacity: .5;
+}
+
 #timeLeft {
     border: 10px;
     border-color: antiquewhite;
     font:bold;
+    color: rgb(41, 37, 37);
+    font-size: large;
 
 }
