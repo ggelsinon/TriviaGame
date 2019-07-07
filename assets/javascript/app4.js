@@ -51,12 +51,12 @@ $(document).ready(function () {
 var gameObj = {
     correct: 0,
     incorrect: 0,
-    counter: 240,
+    counter: 200,
 
     timeLeft: function(){
         gameObj.counter--;
         $("#timeLeft").html(gameObj.counter + " seconds");
-        if(gameObj.counter===0){
+        if(gameObj.counter<=0){
             console,log("time is up");
             gameObj.done();
         }
